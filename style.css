@@ -1,0 +1,1903 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@200..700;1,6..12,200..1000&display=swap");
+
+* {
+  font-family: "Nunito Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  text-transform: capitalize;
+  transition: all 0.2 linear;
+}
+
+html {
+  overflow-x: hidden;
+  height: auto;
+}
+body {
+  background-color: rgb(20, 21, 25);
+}
+
+:root {
+  --red: #e50914;
+  --black: #000000;
+  --light-color: #181818;
+  --box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+  --display-flex: flex;
+  --min-gap: 5px;
+  --with_100: 100%;
+  --hight_100: 100%;
+  --background-size: cover !important;
+  --background-position: center !important;
+}
+
+header {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 0rem 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 10000;
+  background: rgb(44, 46, 58);
+  box-shadow: var(--box-shadow);
+  width: auto;
+}
+
+header .logo {
+  color: white;
+  font-size: 2.5rem;
+}
+
+header .logo i {
+  color: var(--red);
+  font-size: 2.7rem;
+}
+
+header a {
+  border-radius: 0.5rem;
+  padding: 0.5rem 1.5rem;
+  color: #fff;
+}
+
+header .navbar a {
+  font-size: 20px;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1.5rem;
+  color: #fff;
+}
+
+header .navbar {
+  display: var(--display-flex);
+  gap: var(--min-gap);
+}
+
+header .navbar a:hover {
+  color: white;
+  background-color: var(--red);
+}
+
+header .navbar a.active,
+header .navbar a:hover {
+  color: white;
+  background-color: var(--red);
+}
+header .icons {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+header .icons i,
+header .icons a {
+  cursor: pointer;
+ width: auto;
+}
+header .icons i{
+  cursor: pointer;
+  margin-left: 0.5rem;
+  height: 3.5rem;
+  line-height: 3.5rem;
+  width: 3.5rem;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #fff;
+  border-radius: 50%;
+  background: var(--red);
+}
+  
+
+
+header .icons i:hover{
+  color: var(--red);
+  background: #fff;
+  transform: rotate(370deg);
+}
+header .icons #menu-bars {
+  display: none;
+}
+
+.fa-heart:before {
+  content: "\f004";
+  position: relative;
+  top: -6px;
+  left: -8px;
+  align-items: center;
+}
+
+.home {
+  padding: 0;
+}
+
+
+.container1 {
+  max-height: 700px;
+  max-width: 100%;
+  position: relative;
+}
+
+.box {
+  width: 100%;
+  height: auto;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  content: "";
+  display: none;
+}
+.swiper-button-prev,
+.swiper-button-next
+img {
+  width: 30px;
+  display: flex;
+  align-self: center;
+}
+.content {
+  position: absolute;
+  top: 30%;
+  color: white;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  flex-wrap: wrap;
+  left: 8%;
+}
+
+.InContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  width: 400px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* .content p {
+    width: 500px;
+} */
+.btn {
+  display: flex;
+  background-color: #e50914;
+  color: #fff;
+  padding: 10px;
+  height: 40px;
+  gap: 5px;
+}
+.btn img {
+  width: 24px;
+  height: 24px;
+}
+
+.btn:hover {
+  transition: all 0.2s;
+  filter: brightness(120%);
+}
+
+.content_2 {
+  width: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 50%;
+  margin-top: 10%;
+}
+
+#narutoContent {
+  gap: 5px;
+  margin-top: 10%;
+}
+.narito_poto {
+  filter: brightness(0.8);
+}
+
+.animeCard {
+ 
+  background-size: cover !important;
+  background-position: center !important;
+  width: auto;
+  height: 100%;
+}
+.card {
+  border: none;
+  text-align: left;
+  max-width: 100%;
+  max-height: 380px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.card:hover {
+  transition: 0.2s all;
+
+  .card-text {
+    display: none;
+  }
+
+  .card_second_Paige {
+    opacity: 1;
+  }
+}
+.animeList {
+  margin-top: 20px;
+  background: transparent;
+  margin-left: 60px;
+}
+
+.card_second_Paige {
+  color: white;
+  display: block;
+  z-index: 999;
+  position: absolute;
+  left: 0px;
+  width: -webkit-fill-available;
+  height: -webkit-fill-available;
+  background: rgba(32, 32, 32, 0.8);
+  transition: all 0.5s;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  opacity: 0;
+}
+.rate {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-size: 1.1vw;
+  width: 30px;
+}
+.title {
+  font-size: 1vw;
+}
+.animeContent {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  font-size: 1vw;
+}
+.autoplay-progress {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  z-index: 9999;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: var(--swiper-theme-color);
+}
+
+.autoplay-progress svg {
+  --progress: 0;
+  position: absolute;
+  left: 0;
+  top: 0px;
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+  stroke-width: 4px;
+  stroke: var(--swiper-theme-color);
+  fill: none;
+  stroke-dashoffset: calc(125.6px * (1 - var(--progress)));
+  stroke-dasharray: 125.6;
+  transform: rotate(-90deg);
+}
+.sesons_Episods {
+  color: rgb(137, 137, 137);
+}
+.animeListTitle h2 {
+  color: #fff;
+}
+.animeListTitle p {
+  color: rgb(154, 154, 154);
+}
+.animeListTitle {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-bottom: 50px;
+  font-size: 20px;
+  margin-top: 10px;
+}
+.second_third_slots{
+  position: static;
+}
+.card__animee1 {
+  position: relative;
+  z-index: 9999;
+}
+.swiper-container{
+  position: relative;
+}
+.contentInput {
+  max-width: 100%;
+  max-height: 380px;
+  position: relative;
+}
+
+.swiper-slide {
+  width: 100%;
+  height: auto;
+}
+.dethNote_img {
+  filter: brightness(0.8);
+}
+.box_phone_size {
+  display: none;
+}
+.swiper-wrapper {
+  width: 100%;
+  height: auto;
+}
+.watch img {
+    position: absolute;
+    bottom: 20px;
+    width: 30px;
+    height: auto;
+  }
+  .animeSlot_2{
+    margin-top: 5%;
+  }
+
+  /* .swiper-wrapper{
+  width: 30%;
+} */
+.bigCardConteiner{
+  margin-left: 60px;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 170px;
+}
+.biggestPicture{
+  max-width: 100%;
+  max-height: 350px;
+}
+.biggestPicture img{
+  width: 95%;
+  height: auto;
+  background-size: cover;
+  background-position: center;
+}
+.somePictureBigCards{
+  /* display: flex;
+  gap: 20px;
+  flex-direction: column; */
+}
+.bigCardsAnimelist{
+  margin-left: -20px;
+}
+.somePictureBigCards{
+  max-width: 100%;
+  max-height: 250px;
+}
+.somePictureBigCards_content{
+  width: 100%;
+  height: auto;
+  display: flex;
+  gap: 10px;
+  
+}
+.bigCard_kidzuContent h2{
+ font-size: 18px; 
+}
+.bigCard_kidzuContent p{
+line-height: 25px;
+width: 82%;
+}
+.bigCard_kidzuContent{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: white;
+  position: relative;
+  padding-top: 70px;
+  font-family: "Ubuntu Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-variation-settings:"wdth" 100;
+  font-size: 18px;
+  width: 100%;
+}
+.bigCard_kidzuContent h2{
+  font-size: 30px; 
+ }
+.bigCard_kidzuContent a{
+  color: white;
+  font-family: "Ubuntu Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-variation-settings:"wdth" 100;
+}
+.kidzu-wactch_wishlist_buttons{
+position: absolute;
+bottom:10px;
+display: flex;
+gap: 20px;
+margin-right: 100%;
+
+}
+.kidzu-wactch_wishlist_buttons button{
+  color: #ffffff;
+  background-color: rgb(255, 68, 0);
+  width: 200px;
+  font-size: 1.2vw;
+  padding: 8px;
+}
+.kidzuPicture2{
+  display: none;
+}
+.second_third_slots{
+  margin-top: 7%;
+width: 100%;
+height: 100%;
+  background: transparent;
+  margin-left: 60px;
+}
+.somePicture_simpaldiv{
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+}
+.animeSlot_3{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-bottom: 50px;
+  font-size: 20px;
+   flex-wrap: wrap;
+   width: 400px;
+}
+.animeSlot3{
+  margin-top: 8%;
+}
+.footerLists{
+  color: white;
+  margin-top: 15vw;
+  font-size: 13px;
+  padding-bottom: 100PX;
+  max-height: 100%;
+}
+.nav_box a{
+color: rgb(163, 174, 179);
+}
+.NavigationList{
+display: flex;
+flex-direction: column;
+gap: 10px;
+}
+.nav_box{
+  display: flex;
+justify-content: space-between;
+  width:100%;
+}
+.endingOfProject{
+  margin-top: 50px;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.endingOfProject hr{
+  width: auto;
+  height:1px;
+  background-color: rgb(162, 171, 176);
+}
+.footerElementsBox{
+  display: flex;
+  flex-direction: column;
+align-items: center;
+height: 100%;
+justify-content: end;
+}
+.footerElementsBoxSize{
+ width: 800px;
+ display: flex;
+ flex-direction: column;
+ gap: 50px;
+
+}
+.vl {
+  border-left: 1px solid  rgb(112, 119, 122);;
+  
+}
+.ProjetMekers{
+display: flex;
+gap: 3px;
+color: rgb(162, 171, 176) ;
+}
+.animecardsBox{
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  width: 900px;
+  height: auto;
+  justify-content: center;
+  
+}
+.uniwSlaidsBox{
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  width: 900px;
+  height: auto;
+  justify-content: center;
+}
+.searchMainSection{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 150px;
+  margin-top: 10%;
+}
+.cardOfsearch{
+  border: none;
+  text-align: left;
+ width: 100%;
+ height: auto;
+  position: relative;
+  overflow: visible;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+.cardOfsearch p {
+  color: rgb(255, 255, 255);
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+#searchInput{ 
+  border-bottom:solid 1px rgb(160, 160, 147);
+  background-color: transparent;
+  width: 780px;
+  font-size: 30px;
+  color: white;
+}
+#searchInput::placeholder{
+  color: rgb(180, 180, 164);
+}
+.searchPlaece a img{
+  cursor: pointer;
+}
+
+.animecardsBox {
+  display: flex;
+  gap: 20px;
+  width: 90%; /* Adjust this width as needed */
+  max-width: 1000px; /* Maximum width to prevent images from growing too large */
+  max-height: 100%;
+  position: relative;
+
+}
+.MostPopularTitle{
+ position: absolute;
+  top: -150px;
+  left: -15px;
+  font-size: 25px;
+  color: white;
+    font-family: "Noto Sans JP", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.animecardsBox img {
+  width: 100%;
+  height: auto; /* Maintains aspect ratio */
+  object-fit: cover; /* Ensures the image covers the specified dimensions */
+}
+#animeIsnotFound{
+  color: white;
+  font-size: 30px;
+}
+.AllCarsButton{
+  display: flex;
+  justify-content: center;
+  margin-top: 8%;
+}
+.AlllcardsButtonBox{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+.AlllcardsButtonBox p {
+  color: white;
+  font-family: "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+.AlllcardsButtonBox button{
+padding: 9px;
+width: 100px;
+color: rgb(244, 117, 33);
+background-color: transparent;
+border:  2px solid rgb(244, 117, 33);
+cursor: pointer;
+}
+.AlllcardsButtonBox button:hover{
+  color: rgb(255, 148, 77);
+  border:  2px solid rgb(255, 148, 77);
+  }
+.AlllcardsButtonBox img{
+width: 250px;
+height: 95px;
+}
+.cardOfSerchSize{
+  max-width: 150px;
+  max-height:100% ;
+}
+.PictureOfanimeOwn{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-height: 320px;
+  
+}
+.BigPictureBure{
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  filter: blur(.5000rem);
+  opacity: 0.7;
+  background-color: #000000;
+  
+}
+.PictureOfanimeOwnAbsolute{
+  position: absolute;
+  top: 0rem;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+.animeInformation{
+  display: flex;
+  gap: 5rem;
+  color: white;
+  width: 60rem;
+  text-align: left;
+  background-color: transparent;
+}
+.animeInformationFlex_colum{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.mainPartOfPge{
+  display: flex;
+  flex-direction: column;
+   align-items: center;
+gap: 50px;
+
+}
+.animeInformationTexts p{
+font-size: 13px;
+}
+.animeInformationTexts{
+display: flex;
+flex-direction: column;
+gap: 30px;
+width: 35rem;
+height: 7rem;
+overflow: hidden;
+}
+.animeInformationTexts_p{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.moreInformationStyles{
+  display: flex;
+  justify-content: space-between;
+  box-shadow: inset 0 -.0625rem 0 0 #4a4e58 ;
+  padding: 10px;
+  width: 100%;
+  
+}
+.moreInformation{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.moreInformationStyles_P_start{
+  margin-left: -0.6rem;
+}
+.moreInformationStyles_P_end{
+  margin-right: -0.6rem;
+}
+.more_less_Info{
+cursor: pointer;
+color: #acb3c7;
+}
+.more_less_Info:hover{ 
+  color: #ffffff;
+}
+.height100{
+height: 100%;
+}
+.overflow_visibal{
+  overflow: visible;
+}
+.PictureOfanimeOwnSmallPicture{
+  display: none;
+}
+.StartWatching{
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  position: relative;
+  height: 180px;
+}
+.StartWatchingButton{
+  width: 320px;
+}
+.StartWatchingButton:first-child{
+  width: 100%; 
+  cursor: pointer; 
+}
+
+.StartWatchingButtonAbsolute{
+  position: absolute;
+  width: 50px;
+  top: 4.5rem;
+  left: 8.5rem;
+}
+.StartWatching button{
+  width: 100%;
+  padding: 8px;
+}
+.StartWatchingButtonRealy{
+  width: 100%;
+  height: 20px;
+}
+.StartWatchingButtonRealy button{
+display: flex;
+justify-content: center;
+align-items:center ;
+gap: 0.5rem;
+background-color: rgb(244, 117, 33);
+cursor: pointer;
+}
+.StartWatchingButtonRealy img{
+  width: 1rem;
+}.StartWatchingSmallWeb{
+  display: none;
+}
+.animeInformationAndWatch{
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
+}
+
+.scroll-container {
+  display: flex;
+  flex-direction: row; /* Changed to horizontal direction */
+  align-items: center;
+  background-color: rgb(81, 79, 79);
+  height: 3.5rem; /* Adjusted height */
+  width: 60rem;
+}
+.button-container {
+  display: flex;
+  flex-direction: row; /* Changed to horizontal direction */
+  overflow-x: auto; /* Horizontal overflow */
+  scroll-behavior: smooth;
+  height: 100px; /* Adjusted height */
+  margin: 0 1rem;
+ align-items: center;
+}
+.button-container::-webkit-scrollbar {
+  height: 10px; /* Set height for horizontal scrollbar */
+}
+.button-container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+.button-container::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+.button-container::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.scroll-button {
+  background-color: #ff0000;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  height: 100%; /* Adjusted height to fill the container */
+}
+.scroll-button:disabled {
+  background-color: #fa0000;
+  cursor: not-allowed;
+}
+.btnScroll{
+  min-width: 45px; /* Adjusted min-width */
+  padding: 12px;
+  margin: 5px;
+  margin-right: 1.8rem;
+  margin-top: 1rem;
+  border-radius: 50%;
+  background-color: #fa0000;
+  color: white;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.registredUser{
+  position: relative;
+  display: none;
+}
+.registredUserInfo{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap:2rem;
+position: absolute;
+bottom: -4rem;
+color: white;
+background-color: #e50914;
+width: 20rem;
+padding: 0.5rem;
+display: none;
+opacity:0 ;
+left: -15rem;
+}
+.registredUser:hover .registredUserInfo{
+  opacity:1 ;
+}
+.registredUserInfoImgName{
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.mainPartOfRegistration{
+  display: flex;
+  justify-content: center;
+ margin-top: 10rem;
+  align-items: center;
+}
+.wrapper{
+  overflow: hidden;
+  max-width: 390px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0px 15px 20px rgba(0,0,0,0.1);
+  background-color: black;
+}
+.wrapper .title-text{
+  display: flex;
+  width: 200%;
+}
+.wrapper .title{
+  width: 50%;
+  font-size: 35px;
+  font-weight: 600;
+  text-align: center;
+  transition: all 0.6s cubic-bezier(0.68,-0.55,0.265,1.55);
+}
+.wrapper .slide-controls{
+  position: relative;
+  display: flex;
+  height: 50px;
+  width: 100%;
+  overflow: hidden;
+  margin: 30px 0 10px 0;
+  justify-content: space-between;
+  border: 1px solid lightgrey;
+  border-radius: 15px;
+}
+.slide-controls .slide{
+  height: 100%;
+  width: 100%;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 48px;
+  cursor: pointer;
+  z-index: 1;
+  transition: all 0.6s ease;
+}
+.slide-controls label.signup{
+    color: white;
+
+}
+.slide-controls .slider-tab{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  z-index: 0;
+  border-radius: 15px;
+  background: -webkit-linear-gradient(left,#003366,#004080,#0059b3
+, #0073e6);
+  transition: all 0.6s cubic-bezier(0.68,-0.55,0.265,1.55);
+ 
+}
+input[type="radio"]{
+  display: none;
+}
+.wrapper .form-container{
+  width: 100%;
+  overflow: hidden;
+}
+.form-container .form-inner{
+  display: flex;
+  width: 200%;
+}
+.form-container .form-inner form{
+  width: 50%;
+  transition: all 0.6s cubic-bezier(0.68,-0.55,0.265,1.55);
+}
+.form-inner form .field{
+  height: 50px;
+  width: 100%;
+  margin-top: 20px;
+}
+.form-inner form .field input{
+  height: 100%;
+  width: 100%;
+  outline: none;
+  padding-left: 15px;
+  border-radius: 15px;
+  border: 1px solid lightgrey;
+  border-bottom-width: 2px;
+  font-size: 17px;
+  transition: all 0.3s ease;
+}
+.form-inner form .field input:focus{
+  border-color: rgb(244, 117, 33);
+  /* box-shadow: inset 0 0 3px #fb6aae; */
+}
+.form-inner form .field input::placeholder{
+  color: #999;
+  transition: all 0.3s ease;
+}
+.wrapper .title{
+    color: rgb(244, 117, 33);
+}
+form .field input:focus::placeholder{
+  color: rgb(244, 117, 33);
+}
+.form-inner form .pass-link{
+  margin-top: 5px;
+}
+.form-inner form .signup-link{
+  text-align: center;
+  margin-top: 30px;
+}
+.form-inner form .pass-link a,
+.form-inner form .signup-link a{
+  color: rgb(244, 117, 33);
+  text-decoration: none;
+}
+.form-inner form .pass-link a:hover,
+.form-inner form .signup-link a:hover{
+  text-decoration: underline;
+}
+form .btnn{
+  height: 50px;
+  width: 100%;
+  border-radius: 15px;
+  position: relative;
+  overflow: hidden;
+}
+form .btnn .btn-layer{
+  height: 100%;
+  width: 300%;
+  position: absolute;
+  left: -100%;
+  background: rgb(244, 117, 33);
+  border-radius: 15px;
+  transition: all 0.4s ease;;
+}
+form .btnn:hover .btn-layer{
+  left: 0;
+}
+form .btnn input[type="submit"]{
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  position: relative;
+  background: none;
+  border: none;
+  color: #fff;
+  padding-left: 0;
+  border-radius: 15px;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.Eror{
+  width: 80%;
+  background-color: #ff0000;
+  color: white;
+  height: 1.5rem;
+  position: absolute;
+  bottom: 0rem;
+  z-index: 999;
+  font-size: 1rem;
+  border-radius: 20%;
+  align-items: center;
+   justify-content: center;
+ display: none;
+}
+.ErorRelative{
+  position: relative;
+}
+.cardOfSerchSizeProtatipe{
+  width: 150px;
+  height: 280px;
+}
+.cardProtatipe{
+background-color: #e50914;
+}
+.cardProtatipe img{
+width: 100%;
+}
+.sliderUnique{
+  margin-top: 6rem;
+  width: 100%;
+}
+.uniqSlidesBox{
+  width: 60rem;
+  display: flex;
+  justify-content: center;
+}
+.randomCards p{
+color: white;
+}
+.swiper-paginationPozition{
+  margin-top: 5rem;
+
+}
+.swiper-pagination-bullet-active{
+  background-color: rgb(255, 0, 0) !important;
+}
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet{
+width: 1.3rem;
+height: 1.3rem;
+}
+.swiper-pagination-bullet{
+  background-color: rgb(255, 0, 0) !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1300px){
+  .bigCardConteiner{
+    gap: 90px;
+  }
+}
+
+
+
+
+
+
+
+
+@media (max-width: 1144px){
+  .kidzu-wactch_wishlist_buttons button {
+   width: 150px;
+  }
+  .bigCard_kidzuContent{
+    font-size: 15px;
+  }
+  .bigCardConteiner{
+    gap: 40px;
+  }
+  .somePicture_simpaldiv{
+gap: 120px;
+  }
+  
+}
+
+@media (max-width: 1050px){
+  .kidzuPicture1{
+    height: 250px;
+  }
+  .scroll-container{
+    width: 58rem;
+  }
+  .kidzu-wactch_wishlist_buttons{
+    bottom: 10px;
+  }
+  .bigCard_kidzuContent{
+    padding-top: 30px;
+  }
+  .somePictureBigCards{
+    margin-bottom: 10px;
+      }
+}
+
+
+
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+  .scroll-container {
+    display: flex;
+    flex-direction: row; /* Changed to horizontal direction */
+    align-items: center;
+    background-color: rgb(81, 79, 79);
+    height: 6rem; /* Adjusted height */
+  }
+  .StartWatchingButtonAbsolute{
+top: 8.5rem;
+left: 15.5rem;
+  }
+  .Eror{
+    font-size: 1.5rem;
+  }
+  .scroll-container{
+    width: 76rem;
+  }
+  .AlllcardsButtonBox p{
+    font-size: 15px;
+  }
+  header .icons  a img{
+    width: 40px;
+  }
+  .somePictureBigCards{
+    margin-bottom: 0px;
+    
+      }
+      
+      
+      .footerElementsBoxSize{
+width: 600px;
+      }
+
+  .InContent {
+    width: 320px;
+  }
+.animeInformation{
+width: 75rem;
+}
+  header {
+    padding: 1rem 2rem;
+  }
+
+  .content_2 {
+    font-size: 20px;
+  }
+
+  /* .InContent {
+        color: white;
+        font-size: 15px;
+        width: 300px;
+    } */
+  .rate img {
+    width: 13px;
+    height: auto;
+  }
+
+  .watch img {
+    position: absolute;
+    bottom: 20px;
+    width: 20px;
+    height: auto;
+  }
+  .animeContent {
+    gap: 5px;
+  }
+  .btnScroll{
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+  }
+ .more_less_Info{
+  font-size: 1.5rem;
+ }
+  .somePictureBigCards{
+    margin-bottom: 0px;
+      }
+      #searchInput{ 
+        border-bottom:solid 1px rgb(160, 160, 147);
+        background-color: transparent;
+        width: 600px;
+        font-size: 25px;
+        color: white;
+      }
+      /* .cardOfsearch{
+        max-width: 170px;
+        max-height:100% ;
+        
+      } */
+      .cardOfSerchSize{
+        max-width: 130px;
+        max-height:100% ;
+      }
+      .cardOfSerchSizeProtatipe{
+        width: 15rem;
+      }
+      .uniqSlidesBox{
+        width: 76rem;
+      }
+      
+}
+
+
+
+
+@media (max-width: 900px){
+  .kidzuPicture1{
+    height: 200px;
+  }
+  .bigCard_kidzuContent h2{
+    font-size: 20px; 
+   }
+   .bigCard_kidzuContent {
+padding-top: 20px;
+   }
+   .kidzu-wactch_wishlist_buttons button{
+width: 125Px;
+   }
+}
+
+
+
+
+
+
+
+
+@media (max-width: 770px) {
+  
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 770px) {
+    header .icons #menu-bars {
+        display: inline-block;
+        margin-left: 0.5rem;
+        height: 4.5rem;
+        line-height: 4.4rem;
+        width: 4.5rem;
+        text-align: center;
+        font-size: 2rem;
+    }
+    .animeInformationTexts{
+      width: 100%;
+    }
+    .StartWatching{
+      display: none;
+      
+            }
+            .StartWatchingSmallWeb{
+              display: block;
+              height: 3rem;
+              width: 100%;
+            }
+.somePictureBigCards{
+  margin-left: -32px;
+}
+.kidzu-wactch_wishlist_buttons button {
+ padding: 5px;
+ }
+ .animeInformation{
+  width: 60rem;
+  }
+  .animeInformationFlex_colum h2{
+    font-size: 2rem;
+  }
+ 
+    header .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: var(--black);
+        border-top: .1rem solid rgba(0, 0, 0, .2);
+        border-bottom: .1rem solid rgba(0, 0, 0, .2);
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        transition: all 0.5s;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+.somePictureBigCards_content{
+  gap: 30px;
+  
+}
+.uniqSlidesBox{
+  width: 60rem;
+}
+.somePictureBigCards_content p{
+  width: 100%;
+}
+    header .navbar.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    header .navbar a {
+        display: block;
+        padding: 1.5rem;
+        margin: 1rem;
+        font-size: 2rem;
+        background: var(--red);
+        width: 100%;
+
+    }
+    #narutoContent{
+        margin-top: 0%;
+    }
+    .content_2 {
+        font-size: 15px;
+        width: 300px;
+        margin-top: 0;
+    }
+
+    .InContent {
+        color: white;
+        font-size: 15px;
+        width: 230px;
+    }
+    .animeContent{
+        font-size: 1.7vw;
+    }
+    .title{
+        font-size: 1.7vw;
+    }
+    .rate{
+        font-size: 1.8vw;
+    }
+    .watch img{
+        width: 3vw;
+    }
+    .animeList{
+    margin-left: 40px;
+    }
+
+    .footerElementsBoxSize{
+      width: 400px;
+      font-size: 11px;
+            
+    }
+    #searchInput{ 
+      border-bottom:solid 1px rgb(160, 160, 147);
+      background-color: transparent;
+      width: 400px;
+      font-size: 25px;
+      color: white;
+    }
+    header .icons #menu-bars {
+      display: inline-block;
+    }
+    .kidzu-wactch_wishlist_buttons button{
+      width: 140Px;
+      font-size: 14px;
+           }
+    header .navbar {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background: var(--black);
+      border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
+      border-bottom: 0.1rem solid rgba(0, 0, 0, 0.2);
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      transition: all 0.5s;
+      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+  
+    header .navbar.active {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+    .kidzuPicture1{
+  display: none;
+    }
+  .kidzuPicture2{
+  display: block;
+  width: 100%;
+  height: auto;
+  }
+  .somePictureBigCards_content img{
+  height: auto;
+  width: 160px;
+  }
+    header .navbar a {
+      display: block;
+      padding: 1.5rem;
+      margin: 1rem;
+      font-size: 2rem;
+      background: var(--red);
+      width: 100%;
+    }
+    #narutoContent {
+      margin-top: 0%;
+    }
+  
+    .content_2 {
+      font-size: 15px;
+      width: 300px;
+      margin-top: 0;
+    }
+  
+    .InContent {
+      color: white;
+      font-size: 15px;
+      width: 230px;
+    }
+    
+    .swiper-button-next img,
+  .swiper-button-prev img {
+    width: 70%;
+  }
+  .animeContent {
+    font-size: 1.4vw;
+  }
+  .title {
+    font-size: 1.5vw;
+  }
+  .rate {
+    font-size: 1.5vw;
+  }
+  .watch img {
+    width: 3vw;
+  }
+  .kidzu-wactch_wishlist_buttons button{
+    width: 200px;
+    }
+    .scroll-container {
+      display: flex;
+      flex-direction: row; /* Changed to horizontal direction */
+      align-items: center;
+      background-color: rgb(81, 79, 79);
+      height: 6rem; /* Adjusted height */
+      width: 60rem;
+    }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 600px) {
+  .content {
+    margin-top: 10px;
+  }
+  .InContent {
+    color: white;
+    font-size: 15px;
+    width: 230px;
+}
+.kidzu-wactch_wishlist_buttons {
+  flex-direction: column;
+  gap: 10px;
+  bottom: 0;
+
+}
+ .animeInformation{
+  width: 50rem;
+  }
+.kidzu-wactch_wishlist_buttons button{
+width: 200px;
+}
+.bigCard_kidzuContent{
+  padding-top: 5px;
+}
+.PictureOfanimeOwnSmallPicture{
+  display: block;
+}
+.PictureOfanimeOwnBigPicture{
+  display: none;
+}
+.scroll-container {
+
+  width: 50rem;
+}
+.uniqSlidesBox{
+  width: 50rem;
+}
+.cardOfSerchSizeProtatipe{
+  width: 12rem;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 470px) {
+  html {
+        font-size: 50%;
+    }
+    .kidzuPicture2{
+      display: none;
+    }
+    .kidzuPicture1{
+      display: block;
+    }
+    .somePictureBigCards_content img{
+      width: 100%;
+      height: auto;
+    }
+  .InContent {
+    color: white;
+    font-size: 13px;
+    width: 210px;
+  }
+  .content {
+    margin-top: 30px;
+  }
+  .footerElementsBoxSize{
+    width: 300px;
+    font-size: 10px;
+  }
+  .bigCardConteiner{
+    margin-left: 30px;
+    gap: 50px;
+  }
+  .box {
+    display: none;
+  }
+  .somePictureBigCards_content{
+    display: flex;
+    flex-direction: column;
+    margin-left: 31px;
+    margin-right: auto;
+    padding-bottom: 100px;
+    margin-bottom: auto;
+  }
+  .box_phone_size {
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .kidzu-wactch_wishlist_buttons{
+    position: absolute;
+    bottom: -55px;
+    display: flex;
+    max-width: 100%;
+    }
+    .kidzu-wactch_wishlist_buttons button{
+width: 85vw;
+    }
+  .container1 {
+    max-height: 100%;
+    max-width: 100%;
+    position: relative;
+  }
+  .content {
+    position: absolute;
+    top: 20%;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    flex-wrap: wrap;
+    height: 120%;
+    margin-left: -7vw;
+  }
+  .somePicture_simpaldiv{
+    display: flex;
+    flex-direction: column;
+    gap: 65vw;
+  }
+
+  .InContent{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    width: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 15px;
+    /* display: none; */
+  }
+  .wishList{
+    display: none;
+  }
+
+  .btn {
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .content_2 {
+    margin-left: 0%;
+    padding-bottom: 14%;
+  }
+
+  .swiper-button-next img,
+  .swiper-button-prev img {
+    width: 50%;
+  }
+  .animeContent{
+    font-size: 2.5vw;
+}
+.title{
+    font-size: 2.5vw;
+}
+.rate{
+    font-size: 2.5vw;
+}
+.watch img{
+    width: 4vw;
+}
+.animeList{
+  margin-left: 10px;
+  }
+  .bigCard_kidzuContent{
+   margin-top: -30px;
+  }
+  .somePictureBigCards{
+    margin-left: -32px;
+    gap: 100px;
+    margin-right: 55px;
+  }
+  .second_third_slots{
+    margin-top:45%;
+    margin-left: 30px;
+    }
+    .animeSlot3{
+      margin-top: 50%;
+    }
+    /* .cardOfsearch{
+      max-width: 140px;
+      max-height:80% ;
+      
+    } */
+    .cardOfSerchSize{
+      max-width: 150px;
+      max-height:100% ;
+    }
+    #searchInput{ 
+      width: 250px;
+    }
+    #animeIsnotFound{
+      font-size: 20px;
+    }
+    .nav_box{
+      display: flex;
+      gap: 10px;
+    flex-direction: column;
+    align-items: center;
+      width:100%;
+      gap: 30px;
+    }
+    .NavigationList{
+      display: flex;
+      justify-content: space-between;
+      }
+      .NavigationList01{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        padding-bottom: 25px;
+        border-bottom: solid 1px rgb(100, 104, 107)  ;
+        ;
+      }
+      .navListsSize{
+        width: 75px;
+        text-align: left;
+      }
+      .AlllcardsButtonBox{
+       margin-top: 50px;
+      }
+      .MostPopularTitle{
+        font-size: 20px;
+        top: -100px;
+        left: -10px;
+      }
+     .animeInformation{
+        width: 42rem;
+        }
+        .scroll-container {
+
+          width: 42rem;
+        }
+        .cardOfSerchSizeProtatipe{
+          width: 20rem;
+          height: 100%;
+        }
+        .uniqSlidesBox{
+          width: 42rem;
+        }
+      }
+
